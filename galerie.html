@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeno Art - Galerie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html"><img class="logo"  src="Images/logo.png" alt=""></a>
+        <i class="fa fa-bars menu-icon" onclick="toggleMenu()"></i> <!-- icône hamburger -->
+        <ul id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li>GALERIE</li>
+            <li><a href="projets.html">PROJETS</a></li>
+            <li><a href="contact.html">NOUS CONTACTER</a></li>
+        </ul>
+    </nav>
+
+
+    <section class="photos">
+        <div>
+            <img src="Images/20240107_122353.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="Images/20240107_122358.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="Images/20240406_235023.jpg" alt="">
+        </div>
+
+        <div>
+            <img src="Images/2024051402473500.jpg" alt="">
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="galerie.html">Galerie</a>
+            <a href="projets.html">Nos projets</a>
+            <a href="contact.html">Nous contacter</a>
+            <a href="https://www.instagram.com/feeno_art/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="copyright">&copy; Feeno Art - Tous droits réservés</p>
+    </footer>
+
+
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+</body>
+</html>

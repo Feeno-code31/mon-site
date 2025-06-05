@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeno Art - Projets</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <a href="index.html"><img class="logo"  src="Images/logo.png" alt=""></a>
+        <i class="fa fa-bars menu-icon" onclick="toggleMenu()"></i> <!-- icône hamburger -->
+        <ul id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="galerie.html">GALERIE</a></li>
+            <li>PROJETS</li>
+            <li><a href="contact.html">NOUS CONTACTER</a></li>
+        </ul>
+    </nav>
+
+    <div class="description_projet">
+        <img src="Images/Haiti-Flag-Day-World-Wide-Village-scaled.jpg" alt="">
+        <section class="presentation">
+            <h2>AYITI SIKOWOUZE</h2>
+            <p>
+                Je vous propose de visiter mon pays, <strong>ma chère Ayiti</strong>.
+                C'est un projet ambitieux, une mission : <strong>immortaliser ce magnifique pays à travers mes dessins</strong>.
+            </p>
+            <p>
+                Mon objectif est que le peuple haïtien <strong>reconnecte avec sa culture</strong>, qu'il en soit fier, qu'il la célèbre.
+                Je souhaite réaliser <strong>de petits clips</strong> pour transmettre des pensées et animer ce projet.
+            </p>
+            <p>
+                Nous irons à la rencontre de <strong>ceux qu'on oublie trop souvent</strong>, pour découvrir leurs projets et leur mode de vie.
+                Partout où règnent <strong>amour et bienveillance</strong>, nous irons.
+            </p>
+            <p>
+                Ensemble, nous immortaliserons leur vie à travers une œuvre artistique, accompagnée d'un <strong>documentaire</strong>.
+                Ces clips seront offerts aux amoureux de l'art et de la culture haïtienne, aux passionnés du <strong>"LAKAY"</strong>.
+            </p>
+            <p>
+                Nous espérons que ces œuvres toucheront le peuple haïtien et l'encourageront à <strong>s'intéresser à l'art</strong>.
+                Le but ultime : <strong>conscientiser</strong>, <strong>rassembler</strong>, et <strong>rebâtir Ayiti</strong>.
+            </p>
+            <blockquote>
+                Yon jou, fòk sa chanje.  
+                Nou ka chanje sa.  
+                Ann mete men ansanm pou n rann sa posib.
+            </blockquote>
+            <p class="signature">Merci à vous de prendre part à cette aventure.<br><strong>Ayiti chéri !<br>SIKOWOUZE</strong></p>
+        </section>
+
+    </div>
+
+    <footer>
+        <div class="footer-links">
+            <a href="galerie.html">Galerie</a>
+            <a href="projets.html">Nos projets</a>
+            <a href="contact.html">Nous contacter</a>
+            <a href="https://www.instagram.com/feeno_art/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="copyright">&copy; Feeno Art - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+</body>
+</html>
