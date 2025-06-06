@@ -283,8 +283,10 @@ button:hover{
 }
 
 @media (max-width: 780px) {
-    width: 100%;
-    text-align: center;
+    button {
+      width: 100%;
+      text-align: center;
+    }
 }
 
 /* CSS pour la GALERIE */
