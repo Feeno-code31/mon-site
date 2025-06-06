@@ -282,6 +282,10 @@ button:hover{
     cursor: pointer;
 }
 
+@media (max-width: 780px) {
+    width: 100%;
+    text-align: center;
+}
 
 /* CSS pour la GALERIE */
 
