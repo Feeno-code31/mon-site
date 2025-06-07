@@ -139,6 +139,17 @@ i{
         font-size: 60px;
     }
 
+    .inspiration {
+        width: 100%;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        padding: 30px;
+        background: #e7e6e6;
+        letter-spacing: 1px;
+        box-shadow: 10px 0px 0px 10px rgba(71, 70, 70, 0.238);
+    }
+
     .rubriques{
         display: flex;
         flex-direction: column;
