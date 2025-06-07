@@ -138,6 +138,40 @@ i{
         text-align: center;
         font-size: 60px;
     }
+
+    .rubriques{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 100%;
+        gap: 20px;
+        border-top: 1px solid black;
+        margin-top: 50px;
+        padding: 0px;
+    }
+
+    .rubriques > div {
+        text-align: center;
+        padding: 30px;
+    }
+
+
+    .rubriques img {
+        width: 90%;
+        height: auto;
+    }
+
+
+    .lienGalerie, .lienProjets {
+        display: block;
+        width: 90%;
+        font-size: 30px;
+        letter-spacing: 2px;
+        text-decoration: none;
+        margin: 0 auto;
+        color: white;
+        background-color: black; 
+    }
 }
 
 
