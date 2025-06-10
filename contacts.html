@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feeno Art - Galerie</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=BenchNine:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+   
+    <nav>
+        <a href="index.html"><img class="logo"  src="Images/logo.png" alt=""></a>
+        <i class="fa fa-bars menu-icon" onclick="toggleMenu()"></i> <!-- icône hamburger -->
+        <ul id="navLinks">
+            <li><a href="index.html">ACCUEIL</a></li>
+            <li><a href="galerie.html">GALERIE</a></li>
+            <li><a href="projets.html">PROJETS</a></li>
+            <li>NOUS CONTACTER</li>
+        </ul>
+    </nav>
+
+    <section class="section_message">
+        <h2><strong>ENTRONS EN CONTACT</strong></h2>
+        <span class="delai_reponse">Vous recevrez une réponse dans un délai de 3 jours ouvrables</span>
+
+        <form id="contact-form">
+            <div class="nom_prenom">
+                <div>
+                    <label for="nom">Nom: <span class="required">*</span></label>
+                    <input type="text" id="nom" name="Nom" required>
+                </div>
+                <div>
+                    <label for="prenom">Prenom: <span class="required">*</span></label>
+                    <input type="text" id="prenom" name="Prenom" required>
+                </div>
+            </div>
+
+            <p class="email">
+                <label for="email">E-mail: <span class="required">*</span></label><br>
+                <input type="email" id="email" name="Email" required>
+            </p>
+
+            <label class="message_uti" for="textarea">Écrivez votre message ici :</label><br>
+            <textarea name="Message" id="textarea" required></textarea><br>
+
+            <div class="boutton">
+                <button type="submit">Envoyer votre message</button>
+            </div>
+
+            <input type="hidden" name="_captcha" value="false">
+
+        </form>
+
+        <div id="message-envoye" style="display:none; color: green; margin-top: 15px;">
+            ✅ Merci pour votre message ! Nous vous répondrons très bientôt.
+        </div>
+    </section>
+
+<!-- JavaScript à coller avant la balise </body> -->
+
+
+
+    <footer>
+        <div class="footer-links">
+            <a href="galerie.html">Galerie</a>
+            <a href="projets.html">Nos projets</a>
+            <a href="contact.html">Nous contacter</a>
+            <a href="https://www.instagram.com/feeno_art/" target="_blank">
+            <i class="fa-brands fa-instagram"></i>
+            </a>
+        </div>
+        <p class="copyright">&copy; Feeno Art - Tous droits réservés</p>
+    </footer>
+
+    <script>
+        function toggleMenu() {
+            const navLinks = document.getElementById('navLinks');
+            navLinks.classList.toggle('show');
+        }
+    </script>
+
+    <script>
+        document.getElementById('contact-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Empêche la redirection
+
+            const form = e.target;
+            const formData = new FormData(form);
+
+            fetch("https://formsubmit.co/feenomeeno31@gmail.com", {
+                method: "POST",
+                body: formData
+            }).then(response => {
+                if (response.ok) {
+                    document.getElementById('message-envoye').style.display = 'block';
+                    form.reset();
+                } else {
+                    alert("❌ Une erreur est survenue. Merci de réessayer.");
+                }
+            }).catch(error => {
+                alert("❌ Impossible d'envoyer le message. Vérifie ta connexion.");
+            });
+        });
+    </script>
+
+</body>
+</html>
