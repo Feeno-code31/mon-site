@@ -85,6 +85,53 @@ i{
     color: #ff0000;
 }
 
+.inspiration {
+    width: 100%;
+    font-size: 50px;
+    font-weight: bold;
+    text-align: center;
+    padding: 30px;
+    background: #e7e6e6;
+    letter-spacing: 1px;
+    box-shadow: 10px 0px 0px 10px rgba(71, 70, 70, 0.189);
+}
+
+.rubriques{
+    display: flex;
+    width: 100%;
+    max-width: 100%;
+    gap: 20px;
+    margin-top: 10px;
+    padding: 0px;
+}
+
+.rubriques > div { 
+    flex: 1 1 50%;
+    text-align: center;
+    padding: 30px;
+}
+
+
+.rubriques img {
+    width: 50%;
+    height: auto;
+}
+
+
+.lienGalerie, .lienProjets {
+    display: block;
+    width: 55%;
+    font-size: 30px;
+    letter-spacing: 2px;
+    text-decoration: none;
+    margin: 0 auto;
+    color: white;
+    background-color: black; 
+    border-radius: 5px;
+    padding: 5px;
+}
+
+
 /* Responsive - écran <= 768px */
 @media (max-width: 768px) {
     body{
